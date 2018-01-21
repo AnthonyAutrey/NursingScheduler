@@ -1,25 +1,51 @@
 {
-  "name": "nursing-scheduler",
-  "version": "1.0.0",
-  "description": "Helps ULM's nursing program schedule classes and events.",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/AnthonyAutrey/NursingScheduler.git"
-  },
-  "keywords": [
-    "Calendar",
-    "ULM",
-    "nursing",
-    "scheduler"
-  ],
-  "author": "CSCI 4060 - Group Zeta",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/AnthonyAutrey/NursingScheduler/issues"
-  },
-  "homepage": "https://github.com/AnthonyAutrey/NursingScheduler#readme"
+	"name": "nursing-scheduler",
+	"version": "1.0.0",
+	"description": "Helps ULM's nursing program schedule classes and events.",
+	"main": "javascript/index.js",
+	"scripts": {
+		"mongo": "K:\\Programs\\MongoDB\\Server\\3.4\\bin\\mongod.exe --dbpath K:\\data\\db",
+		"nodemon": "nodemon ./javascript/index.js",
+		"autocompile": "tsc -w",
+		"frontend": "npm start --prefix ./frontend",
+		"startWithFrontend": "concurrently -k --names \" Nodemon , TSC, Frontend \" -c \"bgBlack.green,bgBlack.blue,bgBlack.yellow\" \"npm run nodemon\" \"npm run autocompile\" \"npm run frontend\"",
+		"start": "concurrently -k --names \" Nodemon , TSC \" -c \"bgBlack.green,bgBlack.blue\" \"npm run nodemon\" \"npm run autocompile\"",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/AnthonyAutrey/NursingScheduler.git"
+	},
+	"keywords": [
+		"Calendar",
+		"ULM",
+		"nursing",
+		"scheduler"
+	],
+	"author": "CSCI 4060 - Group Zeta",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/AnthonyAutrey/NursingScheduler/issues"
+	},
+	"homepage": "https://github.com/AnthonyAutrey/NursingScheduler#readme",
+	"dependencies": {
+		"@types/node": "^8.0.34",
+		"bcrypt": "^1.0.3",
+		"connect-mongo": "^2.0.0",
+		"cors": "^2.8.4",
+		"crypto": "^1.0.1",
+		"express": "^4.16.2",
+		"express-session": "^1.15.6",
+		"mongoose": "^4.12.1",
+		"multer": "^1.3.0",
+		"nodemailer": "^4.2.0"
+	},
+	"devDependencies": {
+		"@types/express": "^4.0.37",
+		"@types/express-session": "^1.15.3",
+		"concurrently": "^3.5.0",
+		"nodemon": "^1.12.1",
+		"ts-node": "^3.3.0",
+		"typescript": "^2.5.3"
+	}
 }

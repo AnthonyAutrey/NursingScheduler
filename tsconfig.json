@@ -1,0 +1,27 @@
+{
+	"version": "2.4.2",
+	"compilerOptions": {
+		"lib": [
+			"es5",
+			"es6",
+			"dom",
+			"es2017"
+		],
+		"target": "es6",
+		"module": "commonjs",
+		"moduleResolution": "node",
+		"emitDecoratorMetadata": true,
+		"experimentalDecorators": true,
+		"sourceMap": true,
+		"alwaysStrict": true,
+		"noImplicitReturns": true,
+		"pretty": true,
+		"removeComments": true,
+		"outDir": "./javascript",
+		"watch": true
+	},
+	"exclude": [
+		"node_modules",
+		"groupthink-frontend"
+	]
+}
