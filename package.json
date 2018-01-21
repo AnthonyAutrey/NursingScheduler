@@ -1,0 +1,25 @@
+{
+  "name": "nursing-scheduler",
+  "version": "1.0.0",
+  "description": "Helps ULM's nursing program schedule classes and events.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AnthonyAutrey/NursingScheduler.git"
+  },
+  "keywords": [
+    "Calendar",
+    "ULM",
+    "nursing",
+    "scheduler"
+  ],
+  "author": "CSCI 4060 - Group Zeta",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AnthonyAutrey/NursingScheduler/issues"
+  },
+  "homepage": "https://github.com/AnthonyAutrey/NursingScheduler#readme"
+}
