@@ -1,7 +1,12 @@
 import * as express from 'express';
 import * as http from 'http';
+import * as mongoose from 'mongoose';
+import * as mongoConnect from 'connect-mongo';
+import * as session from 'express-session';
 import { Request, Response, NextFunction } from 'express';
 
+var mongoStore = mongoConnect(session);
+mongoose.connect('mongodb://localhost/nursing_scheduler_db');
 var app = express();
 
 // create http and https versions

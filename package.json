@@ -4,7 +4,7 @@
 	"description": "Helps ULM's nursing program schedule classes and events.",
 	"main": "javascript/index.js",
 	"scripts": {
-		"mongo": "K:\\Programs\\MongoDB\\Server\\3.4\\bin\\mongod.exe --dbpath K:\\data\\db",
+		"mongo": "cross-var $mongodPath --dbpath $mongoDBPath",
 		"nodemon": "nodemon ./javascript/index.js",
 		"autocompile": "tsc -w",
 		"frontend": "npm start --prefix ./frontend",
@@ -44,6 +44,7 @@
 		"@types/express": "^4.0.37",
 		"@types/express-session": "^1.15.3",
 		"concurrently": "^3.5.0",
+		"cross-var": "^1.1.0",
 		"nodemon": "^1.12.1",
 		"ts-node": "^3.3.0",
 		"typescript": "^2.5.3"
