@@ -1,2 +1,28 @@
-node_modules
-javascript
+#  dependencies
+/node_modules
+/frontend/node_modules
+
+#  testing
+/frontend/coverage
+
+#  build
+/frontend/build
+/javascript
+
+#  configuration
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+/frontend/.DS_Store
+/frontend/.env.local
+/frontend/.env.development.local
+/frontend/.env.test.local
+/frontend/.env.production.local
+
+#  logs
+npm-debug.log*
+/frontend/npm-debug.log*
+/frontend/yarn-debug.log*
+/frontend/yarn-error.log*
